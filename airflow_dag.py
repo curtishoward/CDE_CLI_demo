@@ -4,15 +4,15 @@ from airflow.operators.dummy_operator import DummyOperator
 from cloudera.cdp.airflow.operators.cde_operator import CDEJobRunOperator
 
 default_args = {
-    'owner': 'curtis',
+    'start_date': datetime(2021,1,1,1),
+    'owner': 'demotest',
     'retry_delay': timedelta(seconds=5),
-    'start_date': datetime(2022,1,1,1),
     'email_on_failure': False,
     'email_on_retry': False,
     'retries': 0
 }
 dag = DAG(
-    'run_penv_udf_test_dag2',
+    'run_penv_udf_test_dag',
     default_args=default_args,
     catchup=False,
     is_paused_upon_creation=False

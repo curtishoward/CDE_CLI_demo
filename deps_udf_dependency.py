@@ -7,5 +7,5 @@ if __name__ == '__main__':
   
   spark.sql("""SELECT OFFSET_FROM_ZIP(zip) AS offset_from_utc, zip FROM 
                (
-                  SELECT zip FROM curtis_factory.experimental_motors_enriched LIMIT 10
+                  SELECT zip FROM factory.experimental_motors_enriched LIMIT 10
                )""").show()
