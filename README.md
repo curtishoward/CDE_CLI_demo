@@ -1,8 +1,8 @@
 # CDE CLI Demo
 
-The [Cloudera Data Engineering Experience](https://www.cloudera.com/products/data-engineering.html) (CDE) provides 3 interfaces to users:  a GUI-based web frontent, a REST API, and a command-line interface (CLI).  The examples in this repository focus on some of the commonly used CLI interface functions.  The examples also incorporate unique features of CDE, such as Job definitions, and file-based as well as PythonEnv-based Resource definitions as dependencies for the Jobs.
+The [Cloudera Data Engineering Experience](https://www.cloudera.com/products/data-engineering.html) (CDE) provides 3 interfaces to users:  a UI-based web frontent, a REST API, and a command-line interface (CLI).  The examples in this repository focus on some of the commonly used CLI functions.  The examples also incorporate unique features of CDE, such as Job definitions, and file-based as well as PythonEnv-based Resource definitions as dependencies for the Jobs.
 
-While the CDE web UI can useful to explore CDE's features, most developers will appreciate the CDE CLI's broad set of features to support automation and monitoring of their Data Engineering pipelines.  The CDE CLI also has minimal dependencies (relies only on CDE's REST API) and can therefore be configured on any host with web access to the CDE virtual cluster endpoint.
+While the CDE web UI can be useful to explore CDE, most developers will appreciate the CDE CLI's broad set of features to support automation and monitoring of their Data Engineering pipelines.  The CDE CLI also has minimal dependencies (relies only on CDE's REST API) and can therefore be configured on any host with web access to the CDE virtual cluster endpoint.
 
 ####
 Pre-requisites for the CLI examples:
