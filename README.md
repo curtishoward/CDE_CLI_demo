@@ -7,7 +7,7 @@ While the CDE web UI can be useful to explore CDE, most developers will apprecia
 ####
 Pre-requisites for the CLI examples:
 - The CDE CLI is configured in the user's environment.  See these instructions, for reference:  https://docs.cloudera.com/data-engineering/cloud/cli-access/topics/cde-cli.html
-- The user has completed the 'Enrich Data' tutorial - the sample applications in this repository will leverage the Hive databases/tables created by those tutorials: https://www.cloudera.com/tutorials/enrich-data-using-cloudera-data-engineering.html.  Alternatively, use run the included Spark job to create a simple test table:  ```cde spark submit setup_table.py```
+- The user has completed the first 2 jobs ('ingest' and 'enrich') jobs from the [CDE workshop examples](https://github.com/curtishoward/cde_etl_demo) (the examples below will leverage the Hive databases/tables created by those jobs).  __**Alternatively**__, use run the included Spark job to create a simple test table:  ```cde spark submit setup_table.py```
 
 ## cde spark submit
 The CDE CLI command ```cde spark submit``` will be very familiar to developers migrating Spark applications from ```spark-submit``` - this is often the best place to start when testing an existing application in CDE.
