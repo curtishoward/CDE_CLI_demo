@@ -74,12 +74,10 @@ To start, the following options that you may have used with `spark-submit` shoul
 - In other cases, you can use the k8s configuration that is equivalent, for example (setting environment variables for the Spark processes):
 ```
 spark.yarn.appMasterEnv.TZ=America/Los_Angeles
-spark.executorEnv.TZ=America/Los_Angeles
 
 becomes
 
 spark.kubernetes.driverEnv.TZ=America/Los_Angeles
-spark.kubernetes.executorEnv.TZ=America/Los_Angeles
 ```
 - Keep in mind that certain Spark-on-k8s configuration listed in the reference links above may not apply or be compatible with CDE (often CDE manages those, or their equivalents internally - for example, configuration related to k8s namespaces, authentication, or volume mounts).  **Please reach out to Cloudera support or your Cloudera account team if you have questions on this part of your migration**.
 - Configuration related to external/3rd-party vendor products should be reviewed and possibly removed (one example of this: Unravel Data configuration such as `spark.unravel.*`)
