@@ -12,7 +12,7 @@ Pre-requisites for the CLI examples:
 ## cde spark submit
 The CDE CLI command ```cde spark submit``` will be very familiar to developers migrating Spark applications from ```spark-submit``` - this is often the best place to start when testing an existing application in CDE.
 
-For additional details and suggestions when migrating Spark applications from `spark-submit` (and Spark-on-YARN) to `cde spark submit` (CDE/Spark-on-k8s), review the following [spark-submit-2-cde-spark-submit](./spark-submit-2-cde-spark-submit.md) notes.
+For a list of suggested changes when migrating Spark applications from `spark-submit` (and Spark-on-YARN) to `cde spark submit` (CDE/Spark-on-k8s), please review the following [spark-submit-2-cde-spark-submit](./spark-submit-2-cde-spark-submit.md) notes.
 
 As an example, the commands below will create a zip archive of custom Python code (a UDF definition in this case), and then submit the job the CDE virtual cluster:
 <br/>
