@@ -59,6 +59,7 @@ To start, the following options that you may have used with `spark-submit` shoul
   
   --file f1.txt --file f2.txt
   ```
+- **IMPORTANT** : by default, files included with job configuration (e.g. `--file some_file.txt`) will be available under `/app/mount/some_file.txt` (and not the Spark process working directory).  Therefore the application will need to refer to this full path to access the file (rather than `./some_file.txt`).
 - If the application/entrypoint itself needs to be passed additional arguments, these should be separated from the `cde spark submit` arguments using `--` in front of them. This will instruct the parser to treat the rest of the string literally, e.g.:
     ```
     my_entrypoint.py -- -a 1 -b "twenty two"
