@@ -65,8 +65,9 @@ To start, the following options that you may have used with `spark-submit` shoul
     my_entrypoint.py -- -a 1 -b "twenty two"
     ```
 * Rename `--app.name` to `--job-name`
-* CDE defaults to Python3.  If you intend to use legacy Python2, Add `--python-version python2`
+* CDE defaults to Python3.  If you intend to use legacy Python2, Add `--python-version python2`.  The Python version should always be set through CDE (for example, `--python-version` flag) - any previous references used to set the Python version (such as `spark.yarn.appMasterEnv.PYSPARK_PYTHON=python3.6`) should be removed).
 * If you are migrating an application from an on-prem environment that uses HDFS for storage, you will also likely need to update `hdfs://...` paths in your configuration to the equivalent cloud storage URI of that data (for example, `s3a://...`)
+* 
 
 
 ## Review
